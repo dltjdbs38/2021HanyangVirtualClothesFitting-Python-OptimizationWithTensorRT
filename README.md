@@ -6,21 +6,21 @@ NVIDIA의 Jetson Nano Board 위에서 GAN 모델(없는 이미지를 그럴듯�
 
 성능이 좋은 타 GPU들과는 다르게 Jetson Nano Board는 저렴한 가격으로 매우 간단한 성능만을 가지고 있기에 다른 GPU보다 속도가 느려 최적화가 필수적
 
-![Jetson Nano Board](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d59c872c-871a-4ebd-a5e2-71cfd74e4bb8/Untitled.png)
+![image](https://user-images.githubusercontent.com/74050826/168761866-abefac57-6468-449a-b3c0-1c849a2f9060.png)
 
 Jetson Nano Board
 
 따라서 가상 의류 피팅 모델을 이루는 두 가지 모델 warping model과 gen model 중 gen model에 tensorRT를 적용하여 평균 추론 속도를 약 10배 빠르게 만드는 데 성공하였다.
 
-![사본 -Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e7dd111-f7c7-405b-a8c9-80bc33cbb4d8/사본_-Untitled.png)
+![image](https://user-images.githubusercontent.com/74050826/168762113-7e360a75-7dc3-4e3c-a42c-67f1ebfa4731.png)
 
 가상 옷 피팅 inference 결과
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0477af9b-692d-4452-8173-8f1f7312c815/Untitled.png)
+![image](https://user-images.githubusercontent.com/74050826/168762140-34caa1eb-c045-407c-bb24-81e1669f5837.png)
 
 tensorRT 적용 전(평균 0.053)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40da2b9e-4aee-4e9b-96bb-b47f04c93774/Untitled.png)
+![image](https://user-images.githubusercontent.com/74050826/168762167-05fcc6ee-33da-4c79-9ea2-d2c86a5d895c.png)
 
 tensorRT 적용 후(평균 0.0038)
 
@@ -28,7 +28,7 @@ tensorRT 적용 후(평균 0.0038)
 
 ---
 
-![슬라이드14.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/54fbf5fe-4c84-4c65-831c-6ba02d006136/슬라이드14.png)
+![image](https://user-images.githubusercontent.com/74050826/168762205-854c77ce-80f7-442b-a4c0-720bac7f91c0.png)
 
 ### 어려웠던 점
 
@@ -37,7 +37,7 @@ tensorRT 적용 후(평균 0.0038)
 1. MLOps 개발환경 구성 - 라이브러리들 간의 호환성
 - Jetpack 을 사용하여 필요한 OS image와 라이브러리들을 구성하였는데, 이 과정에서 pf-afn 모델에 필요한 라이브러리와 Jetson Nano Board의 JetPack이 가진 호환성의 한계로 인해 개발환경을 구성하는데에 어려움이 있었음
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33a38ecd-c586-4c09-9d39-a52eec4927f5/Untitled.png)
+![image](https://user-images.githubusercontent.com/74050826/168762249-64b1c7ae-e014-400b-b17c-01f558a37a9e.png)
 
 1. Optimization 의 원리 이해 
 - 왜 tensorRT를 사용하면 인공지능의 추론 속도가 빨라지는지?
