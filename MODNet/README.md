@@ -20,3 +20,7 @@ Trimap이 없는 방법에 공통적인 도메인 이동 문제를 해결하기 
 - inference 확인 및 input에 필요한 전경이 제거된 의류 이미지 사진을 얻기 위해 해당 모델을 적용하였다. (전처리 단계)  
 ![image](https://user-images.githubusercontent.com/74050826/168763275-29cb677b-9eaf-4264-8a08-36ed7b6fc49d.png)  
 - 우리 프로젝트에서 필요한 전경이 제거된 의류의 edge 이미지 생성의 예시이다. 구찌 옷 이미지를 사용하였다.
+
+데모
+---
+전처리 과정 및 간단한 colab 환경 구현을 위해서는 MODNet_Image_Matting_Demo.ipynb 파일을 참고하면 된다.
